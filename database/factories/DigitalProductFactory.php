@@ -14,8 +14,8 @@ class DigitalProductFactory extends Factory
     public function definition()
     {
         return [
-            'product_type_id'=>$this->faker->numberBetween(1,10),
-            'name' => $this->faker->name(),
+            'product_type_id'=>$this->faker->numberBetween(1,4),
+            'name' => $this->faker->word(),
             'price' => $this->faker->randomDigit(),
             'description'=>$this->faker->sentence(),
             'discount' => $this->faker->randomDigit(),
